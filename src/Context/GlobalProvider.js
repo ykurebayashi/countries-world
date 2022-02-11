@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import GlobalContext from "./GlobalContext";
 
 function GlobalProvider({ children }) {
+    const [countries, setCountries] = useState([]);
 
-    const contextValue = {}
+    const contextValue = {
+        countries,
+        setCountries,
+    }
 
     return(
         <GlobalContext.Provider value={ contextValue }>

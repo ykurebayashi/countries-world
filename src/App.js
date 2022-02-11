@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={ <Main /> } />
-          <Route exact path="/:id" element={ <Detailed /> } />
+          <Route exact path="/details/:id" element={ <Detailed /> } />
         </Routes>
       </BrowserRouter>
     </GlobalProvider>
