@@ -25,7 +25,7 @@ function Main() {
             <Header name="Main" />
             {console.log(countries)}
             {countries.length !== 0 ? countries.map((country) => {
-                return <Link to={ `/details/${country.name.official}}` } >
+                return <Link to={ `/details/${country.name.official}` } >
                     <CountryCard
                         countryImg={country.flags[1]}
                         countryName={country.name.common}
