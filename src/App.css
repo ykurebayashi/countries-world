@@ -6,6 +6,20 @@
   color: black;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  border: 0px none #ffffff;
+}
+
 .Header {
   display: flex;
   justify-content: space-around;
@@ -15,6 +29,7 @@
   height: 10vh;
   margin-bottom: 25px;
   width: 100%;
+  background-color: lightblue;
 }
 
 .Header h1 {
@@ -40,6 +55,10 @@
   justify-content: center;
   background-color: rgb(255, 255, 255);
   overflow-y: scroll;
+}
+
+.Main-Page-Body {
+  background-color: rgb(221, 221, 221);
 }
 
 /* Country Card Style */
@@ -106,4 +125,15 @@
 
 .Detailed-page-infos {
   height: 90vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .Main-Page-Body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .Main-Page-Body a {
+    margin: 10px;
+  }
 }
