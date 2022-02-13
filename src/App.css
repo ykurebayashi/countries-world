@@ -57,9 +57,6 @@
   overflow-y: scroll;
 }
 
-.Main-Page-Body {
-  background-color: rgb(221, 221, 221);
-}
 
 /* Country Card Style */
 .Country-card {
@@ -127,6 +124,26 @@
   height: 90vh;
 }
 
+.filter-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-form input, .filter-form select {
+  height: 5vh;
+  margin: 0px 10px;
+}
+
+.filter-form input {
+  width: 75%;
+}
+
+.filter-form select {
+  width: 25%;
+}
 @media only screen and (min-width: 600px) {
   .Main-Page-Body {
     flex-direction: row;
@@ -137,3 +154,4 @@
     margin: 10px;
   }
 }
+
